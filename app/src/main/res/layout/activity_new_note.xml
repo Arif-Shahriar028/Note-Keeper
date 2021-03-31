@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewNote">
+
+
+    <EditText
+        android:id="@+id/titleId"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1B1B1B"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:layout_weight="2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="36"
+        android:background="@drawable/border"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:id="@+id/descId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tap here to start writing description"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>
